@@ -9,6 +9,11 @@ packages = [{include = "pre_commit_tofu", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 
+[tool.poetry.scripts]
+tofu-fmt = 'pre_commit_tofu.tofu_fmt:main'
+
+[tool.black]
+line-length = 120
 
 [build-system]
 requires = ["poetry-core"]

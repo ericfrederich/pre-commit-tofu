@@ -1,0 +1,7 @@
+-   id: tofu-fmt
+    name: Tofu Format
+    description: Runs tofu fmt on all .tf and .tfvars files
+    entry: tofu-fmt
+    language: python
+    files: (\.tf|\.tfvars)$
+    exclude: \.tofu/.*$
